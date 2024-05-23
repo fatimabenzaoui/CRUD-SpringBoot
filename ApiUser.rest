@@ -1,0 +1,37 @@
+### SAVE - USER
+POST http://localhost:8081/api/user
+Content-Type: application/json
+
+{
+    "firstName": "toto",
+    "lastName": "dupont",
+    "username": "todi",
+    "password": "124590",
+    "email": "tod@tod.fr"
+}
+
+### FIND ALL - USER
+
+GET http://localhost:8081/api/users
+
+### FIND BY ID - USER
+
+GET http://localhost:8081/api/user/2
+
+### UPDATE BY ID - USER
+
+PUT http://localhost:8081/api/user/2
+Content-Type: application/json
+
+{
+    "firstName": "tototttt",
+    "lastName": "duponttttt",
+    "username": "todi",
+    "password": "12459033333",
+    "email": "dupont@dupond.fr"
+}
+
+### DELETE BY ID - USER
+
+DELETE http://localhost:8081/api/user/3
+
